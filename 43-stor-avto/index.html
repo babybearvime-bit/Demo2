@@ -1,0 +1,139 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Стор-авто ремонт ходовой части</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Стор-авто — ремонт ходовой части в Пушкине, Сетевая улица, 13. Ежедневно 10:00–20:00. +7-931-231-09-19">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Variant C: industrial garage — deep navy, electric blue, hazard-stripe accents, full-bleed photo hero, numbered list layout */
+:root{
+  color-scheme:dark;
+  --bg:#07101F; --bg2:#0C1A30; --card:#10223D; --line:#1E3456; --fg:#EEF3FA; --muted:#8FA3BF;
+  --blue:#2D8CFF; --blue-hi:#64AAFF; --star:#FFC83D;
+  --fh:'Russo One',Impact,'Arial Black',sans-serif; --fb:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--fb);font-size:16px;line-height:1.55}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--fh);font-weight:400;margin:0;line-height:1.08;text-transform:uppercase;text-wrap:balance}
+h2{font-size:clamp(28px,4.4vw,48px)}
+.num{font-family:var(--fh);color:var(--blue);font-size:14px;letter-spacing:.12em;display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.num::after{content:"";height:2px;width:56px;background:var(--blue)}
+section{padding-block:80px}
+:focus-visible{outline:2px solid var(--blue-hi);outline-offset:3px}
+.stripe{height:10px;background:repeating-linear-gradient(-45deg,var(--blue) 0 14px,transparent 14px 28px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 24px;font-weight:700;text-decoration:none;font-size:15px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em;border:2px solid transparent;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-hi)}
+.btn-line{border-color:var(--fg);clip-path:none}.btn-line:hover{border-color:var(--blue-hi);color:var(--blue-hi)}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(7,16,31,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:20px;min-height:66px}
+.logo{font-family:var(--fh);font-size:24px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo span{color:var(--blue)}
+nav{display:flex;gap:22px;margin-left:auto;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--fg)}
+.hbar .btn{padding:10px 18px}
+@media (max-width:920px){nav{display:none}.hbar .btn{margin-left:auto}}
+
+.hero{position:relative;padding:0;min-height:min(88vh,760px);display:flex;align-items:center;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,16,31,.55),rgba(7,16,31,.92) 85%),linear-gradient(90deg,rgba(7,16,31,.9),transparent 70%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-block:80px}
+.hero h1{font-size:clamp(38px,7vw,88px);max-width:12ch}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:clamp(17px,2vw,20px);color:#C9D5E6;max-width:56ch;margin:22px 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.badges{display:flex;flex-wrap:wrap;gap:28px 48px;margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,.18)}
+.badge b{display:block;font-family:var(--fh);font-size:clamp(26px,3.6vw,38px)}
+.badge small{color:var(--muted);font-size:14px}
+.stars{color:var(--star);letter-spacing:2px}
+
+.svc-list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,1.4fr);gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line);transition:background .2s}
+.row:hover{background:linear-gradient(90deg,rgba(45,140,255,.08),transparent)}
+.row .n{font-family:var(--fh);color:var(--blue);font-size:22px}
+.row h3{font-size:clamp(18px,2.2vw,24px)}
+.row p{margin:0;color:var(--muted)}
+@media (max-width:760px){.row{grid-template-columns:52px 1fr}.row p{grid-column:2}}
+
+.band{background:var(--bg2)}
+.pgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start}
+.plist{background:var(--card);border:1px solid var(--line)}
+.pl{display:flex;justify-content:space-between;gap:16px;padding:17px 22px;border-bottom:1px solid var(--line)}
+.pl:last-child{border-bottom:0}
+.pl span:last-child{color:var(--blue-hi);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.06em;white-space:nowrap}
+.pbox{background:var(--blue);padding:32px;display:grid;gap:14px}
+.pbox h3{font-size:26px}
+.pbox p{margin:0;color:#E4EFFF}
+.pbox .ph{font-family:var(--fh);font-size:clamp(24px,3vw,32px);text-decoration:none}
+.pbox .btn{background:#fff;color:var(--blue);justify-self:start}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+
+.gal{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:200px;gap:8px}
+.gal figure{margin:0;position:relative;overflow:hidden;background:var(--card)}
+.gal figure:nth-child(1){grid-column:span 4;grid-row:span 2}
+.gal figure:nth-child(2),.gal figure:nth-child(3){grid-column:span 2}
+.gal figure:nth-child(n+4){grid-column:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;filter:saturate(.9);transition:transform .4s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:0;bottom:0;background:var(--blue);color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:6px 12px}
+@media (max-width:760px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gal figure:nth-child(n){grid-column:span 1;grid-row:span 1}.gal figure:nth-child(1){grid-column:span 2}}
+
+.rtop{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px;margin-bottom:30px}
+.rtop .big{font-family:var(--fh);font-size:72px;line-height:1}
+.rev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.rc{background:var(--bg);padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.rc p{margin:0;flex:1}
+.rc p::before{content:"“";font-family:var(--fh);color:var(--blue);font-size:40px;line-height:0;vertical-align:-14px;margin-right:4px}
+.rc .who{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;text-transform:uppercase;letter-spacing:.05em}
+.rc .who b{color:var(--fg)}
+@media (max-width:900px){.rev{grid-template-columns:1fr}}
+
+.faq{display:grid;gap:0;border-top:1px solid var(--line);max-width:900px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:22px 56px 22px 0;font-weight:700;font-size:18px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:36px;height:36px;display:grid;place-items:center;background:var(--card);color:var(--blue-hi);font-size:22px}
+details[open] summary::after{content:"–";background:var(--blue);color:#fff}
+details p{margin:0;padding:0 0 22px;color:var(--muted);max-width:65ch}
+
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.cc{background:var(--bg2);padding:28px;display:grid;gap:8px;align-content:start;min-width:0}
+.cc small{color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px}
+.cc b{font-size:19px;overflow-wrap:anywhere}
+.cc .ph{font-family:var(--fh);font-size:clamp(22px,2.6vw,28px);text-decoration:none}
+.cc .cta{margin-top:10px}
+@media (max-width:860px){.cgrid{grid-template-columns:1fr}}
+
+footer{padding-block:30px 100px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;gap:10px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(7,16,31,.96);border-top:1px solid var(--line)}
+.callbar .btn{flex:1}
+@media (max-width:920px){.callbar{display:flex}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gal img,.row{transition:none}}
+.hero.nophoto{background:radial-gradient(ellipse at 80% 20%,rgba(45,140,255,.25),transparent 60%),repeating-linear-gradient(-45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 22px),var(--bg)}
+.hero.nophoto::after{display:none}
+body{margin:0}
+img{max-width:100%}
+.pl small{display:block;color:var(--muted);font-size:13px}
+.rc .ans{font-size:14px;color:var(--muted);border-left:2px solid var(--blue);padding-left:10px}</style>
+<header><div class="wrap hbar"><a class="logo" href="#top"><svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><path fill="#2D8CFF" d="M24 4l3.2 4.6 5.5-1.2 1.1 5.5 5.5 1.1-1.2 5.5L42.7 23l-4.6 3.2 1.2 5.5-5.5 1.1-1.1 5.5-5.5-1.2L24 42l-3.2-4.6-5.5 1.2-1.1-5.5-5.5-1.1 1.2-5.5L5.3 23l4.6-3.2-1.2-5.5 5.5-1.1 1.1-5.5 5.5 1.2z"/><circle cx="24" cy="23" r="8" fill="#07101F"/></svg>СТОР<span>АВТО</span></a><nav><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav><a class="btn btn-blue" href="tel:+79312310919">Позвонить</a></div></header>
+<main id="top">
+<section class="hero"><img src="img/01.jpg" alt="Здание мастерской"><div class="wrap"><div class="num">Пушкин &#183; Сетевая ул., 13</div><h1>Ремонт <span>ходовой</span> части</h1><p>Ремонт ходовой части автомобиля.</p><div class="cta"><a class="btn btn-blue" href="tel:+79312310919">+7-931-231-09-19</a></div><div class="badges"><div class="badge"><b>5,0 ★</b><small>рейтинг в 2ГИС</small></div><div class="badge"><b>1</b><small>отзыв в 2ГИС</small></div><div class="badge"><b>10–20</b><small>ежедневно</small></div><div class="badge"><b>с 2024</b><small>работаем</small></div></div></div></section>
+<div class="stripe"></div>
+<section id="services"><div class="wrap"><div class="num">01 / Услуги</div><h2 style="margin-bottom:36px">Что мы делаем</h2><div class="svc-list"><div class="row"><span class="n">01</span><h3>Ходовая часть</h3><p>Ремонт ходовой части автомобиля</p></div></div></div></section>
+<section id="prices" class="band"><div class="wrap"><div class="num">02 / Цены</div><h2 style="margin-bottom:36px">Стоимость</h2><div class="pgrid"><div class="plist"><div class="pl"><span>Ремонт ходовой части</span><span>по запросу</span></div></div><div class="pbox"><h3>Узнать цену</h3><p>Стоимость зависит от автомобиля и объёма работ — назовём её по телефону.</p><a class="ph" href="tel:+79312310919">+7-931-231-09-19</a><p>Пн–Вс 10:00–20:00</p><a class="btn" href="tel:+79312310919">Позвонить</a></div></div></div></section>
+<section id="reviews" class="band"><div class="wrap"><div class="num">03 / Отзывы</div><div class="rtop"><h2>Клиенты о нас</h2><span class="big">5,0</span><span><span class="stars">★★★★★</span><br><span style="color:var(--muted);font-size:14px">1 отзыв в 2ГИС</span></span><a class="btn btn-line" href="https://2gis.ru/spb/firm/70000001095344466/tab/reviews" target="_blank" rel="noopener" style="margin-left:auto">Все отзывы в 2ГИС</a></div><div class="rev"><div class="rc"><span class="stars">★★★★★</span><p>Отличный сервис, все объяснят и сделают как надо.</p><div class="who"><b>Евгения Л.</b><span>07.04.2026 · 2ГИС</span></div></div></div></div></section>
+<section id="faq"><div class="wrap"><div class="num">04 / Вопросы</div><h2 style="margin-bottom:36px">Частые вопросы</h2><div class="faq"><details><summary>Когда вы работаете?</summary><p>Ежедневно, без выходных, с 10:00 до 20:00.</p></details><details><summary>Как к вам проехать?</summary><p>г. Пушкин, Сетевая улица, 13.</p></details><details><summary>Сколько стоит ремонт?</summary><p>Цены зависят от автомобиля и работ — точную стоимость уточняйте по телефону +7-931-231-09-19.</p></details><details><summary>Ремонтируете ходовую часть?</summary><p>Да, ремонт ходовой части автомобиля — наша основная услуга.</p></details><details><summary>Как записаться?</summary><p>Позвоните по номеру +7-931-231-09-19.</p></details></div></div></section>
+<div class="stripe"></div>
+<section id="contacts" class="band"><div class="wrap"><div class="num">05 / Контакты</div><h2 style="margin-bottom:36px">Ждём вас</h2><div class="cgrid"><div class="cc"><small>Телефон</small><a class="ph" href="tel:+79312310919">+7-931-231-09-19</a><div class="cta"><a class="btn btn-blue" href="tel:+79312310919">Позвонить</a></div></div><div class="cc"><small>Адрес</small><b>г. Пушкин, Сетевая улица, 13</b><div class="cta"><a class="btn btn-line" href="https://2gis.ru/spb/firm/70000001095344466" target="_blank" rel="noopener">2ГИС</a><a class="btn btn-line" href="https://yandex.ru/maps/?pt=30.454575,59.731303&amp;z=17&amp;l=map" target="_blank" rel="noopener">Яндекс</a></div></div><div class="cc"><small>Режим работы</small><b>Пн–Вс 10:00–20:00</b><span style="color:var(--muted)">Без выходных</span></div></div></div></section>
+</main>
+<footer><div class="wrap" style="display:block"><p style="margin:0 0 8px;color:var(--fg);font-weight:600">Это концепт сайта, сделанный для примера. Мы не связаны с компанией «Стор-авто ремонт ходовой части» и не представляем её интересы.</p><p style="margin:0">Сведения и фото взяты из открытой карточки компании в 2ГИС (16.11.2026). Контакты на странице ведут в саму компанию.</p></div></footer>
+<div class="callbar"><a class="btn btn-blue" href="tel:+79312310919">Позвонить</a></div>
