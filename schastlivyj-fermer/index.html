@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Счастливый фермер</title>
+<meta name="description" content="Счастливый фермер — мясная лавка в Шушарах: свежее халяль-мясо, колбасы, курица, полуфабрикаты, молочные продукты из Дагестана. Муромская ул., 2А и Образцовая ул., 2. Ежедневно 9:00–21:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;700;800&display=swap">
+<style>
+:root{
+  --wine:#5e1622; --wine-2:#7a1f2d; --wine-ink:#3d0d15;
+  --cream:#f7efe2; --paper:#fffaf2; --sand:#ead9bf;
+  --gold:#d9a23f; --gold-2:#f0c46a;
+  --moss:#55633a; --ink:#2a1a14; --muted:#6f5a4c;
+  --line:rgba(94,22,34,.14);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Manrope,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:Lora,Georgia,"Times New Roman",serif;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4.2vw,46px);color:var(--wine)}
+.kicker{font:800 12px/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.kicker::before{content:"";width:28px;height:2px;background:var(--gold)}
+.sec{padding-block:clamp(64px,9vw,110px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head p{max-width:460px;margin:0;color:var(--muted)}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:rgba(61,13,21,.94);backdrop-filter:blur(8px);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:50%;border:2px solid var(--gold)}
+.brand b{font:700 19px/1.1 Lora,serif;display:block}
+.brand small{font-size:12px;opacity:.75;letter-spacing:.04em}
+.nav{display:flex;gap:22px;font-size:14px;font-weight:600}
+.nav a{text-decoration:none;opacity:.85}.nav a:hover{opacity:1;color:var(--gold-2)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:800 15px/1 Manrope,sans-serif;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--wine-ink)}.btn-gold:hover{background:var(--gold-2)}
+.btn-ghost{border-color:rgba(247,239,226,.45);color:var(--cream)}.btn-ghost:hover{background:rgba(247,239,226,.1)}
+.btn-sm{padding:10px 16px;font-size:14px}
+@media(max-width:900px){.nav{display:none}}
+
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 85% -10%,#8a2a39 0,transparent 60%),var(--wine);color:var(--cream);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--paper);clip-path:polygon(0 100%,0 60%,12% 20%,22% 55%,34% 5%,47% 50%,58% 25%,70% 60%,82% 15%,92% 45%,100% 30%,100% 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:64px 120px}
+.hero h1{font-size:clamp(40px,6vw,72px);font-weight:700}
+.hero h1 em{font-style:italic;color:var(--gold-2);font-weight:500}
+.slogan{font:italic 500 20px/1.4 Lora,serif;color:var(--sand);margin:18px 0 8px}
+.hero .lead{max-width:520px;opacity:.9;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;padding-top:26px;border-top:1px solid rgba(247,239,226,.18)}
+.stats div b{display:block;font:700 28px/1 Lora,serif;color:var(--gold-2)}
+.stats div span{font-size:13px;opacity:.75}
+.hero-art{position:relative;min-width:0}
+.hero-art .ph{border-radius:220px 220px 24px 24px;overflow:hidden;border:6px solid rgba(247,239,226,.12);aspect-ratio:4/5;max-width:100%}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover}
+.seal{position:absolute;left:-26px;bottom:34px;width:150px;height:150px;border-radius:50%;border:5px solid var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.35);overflow:hidden;background:var(--wine)}
+.seal img{width:100%;height:100%;object-fit:cover}
+.halal{position:absolute;right:14px;top:30px;background:var(--cream);color:var(--wine);border-radius:14px;padding:10px 14px;font:800 13px/1.2 Manrope,sans-serif;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.halal small{display:block;font-weight:600;letter-spacing:0;text-transform:none;color:var(--muted)}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:40px 110px}.seal{width:110px;height:110px;left:10px;bottom:-20px}}
+
+/* assortment */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .im{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .im img{transform:scale(1.04)}
+.card .tx{padding:20px 22px 24px}
+.card h3{font-size:23px;color:var(--wine);margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card.plain{background:var(--wine);color:var(--cream);border:0;justify-content:center}
+.card.plain h3{color:var(--gold-2)}.card.plain p{color:rgba(247,239,226,.85)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{font-size:13px;font-weight:700;padding:6px 11px;border-radius:999px;background:var(--cream);color:var(--wine)}
+.card.plain .tags span{background:rgba(247,239,226,.12);color:var(--cream)}
+
+/* service band */
+.band{background:var(--cream);border-block:1px solid var(--line)}
+.band .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:820px){.band .wrap{grid-template-columns:1fr}}
+.svc{display:flex;gap:16px;align-items:flex-start}
+.svc .n{flex:none;width:46px;height:46px;border-radius:50%;background:var(--wine);color:var(--gold-2);display:grid;place-items:center;font:700 20px Lora,serif}
+.svc h3{font-size:21px;color:var(--wine);margin-bottom:4px}
+.svc p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* recipe */
+.recipe{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+@media(max-width:820px){.recipe{grid-template-columns:1fr}}
+.recipe .ph{border-radius:24px;overflow:hidden;aspect-ratio:1/1}
+.recipe .ph img{width:100%;height:100%;object-fit:cover}
+.note{background:#fff;border:1px dashed var(--gold);border-radius:22px;padding:26px 28px;margin-top:22px;position:relative}
+.note h3{font-size:20px;color:var(--wine);margin-bottom:12px}
+.note ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.note li{display:flex;gap:10px;align-items:center;font-weight:600}
+.note li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none}
+.note .src{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal figure{margin:0;border-radius:18px;overflow:hidden;position:relative;background:var(--sand)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal .w{grid-column:span 2}.gal .t{grid-row:span 2}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(61,13,21,.82);color:var(--cream);font-size:12.5px;font-weight:700;padding:5px 10px;border-radius:999px}
+@media(max-width:820px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
+
+/* reviews */
+.rv-top{display:flex;gap:16px;flex-wrap:wrap}
+.score{background:var(--wine);color:var(--cream);border-radius:18px;padding:16px 20px;min-width:170px}
+.score b{font:700 34px/1 Lora,serif;color:var(--gold-2)}
+.score span{display:block;font-size:13px;opacity:.8;margin-top:4px}
+.reviews{columns:3 300px;column-gap:20px}
+.rv{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin:0 0 20px}
+.rv .st{color:var(--gold);letter-spacing:2px;font-size:15px}
+.rv p{margin:10px 0 14px;font-size:15.5px}
+.rv footer{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted)}
+.rv footer b{color:var(--ink)}
+.more{margin-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+.btn-line{border-color:var(--wine);color:var(--wine)}.btn-line:hover{background:var(--wine);color:var(--cream)}
+
+/* shops */
+.shops{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:820px){.shops{grid-template-columns:1fr}}
+.shop{background:var(--wine);color:var(--cream);border-radius:26px;padding:30px;position:relative;overflow:hidden}
+.shop .no{font:700 70px/1 Lora,serif;color:rgba(240,196,106,.18);position:absolute;right:22px;top:12px}
+.shop h3{font-size:26px;color:var(--gold-2);margin-bottom:8px}
+.shop p{margin:0 0 6px;opacity:.9}
+.shop .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+@media(max-width:820px){.info{grid-template-columns:1fr}}
+.info div{background:var(--cream);border-radius:20px;padding:22px 24px}
+.info h4{margin:0 0 8px;font:800 12px/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
+.info p{margin:0;font-weight:600}
+.info a{text-decoration:none;border-bottom:1px solid var(--line)}
+.info .ph-list{display:grid;gap:4px;font:700 19px/1.4 Lora,serif;color:var(--wine)}
+
+/* footer */
+.foot{background:var(--wine-ink);color:rgba(247,239,226,.8);padding-block:44px 90px;font-size:14px}
+.foot .wrap{display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap;align-items:center}
+.foot .brand b{color:var(--cream)}
+.foot p{max-width:560px;margin:0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:rgba(61,13,21,.96)}
+.callbar a{flex:1;justify-content:center}
+@media(max-width:700px){.callbar{display:flex}.top .btn{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <img src="img/logo.jpg" alt="Логотип «Счастливый фермер»">
+      <span><b>Счастливый фермер</b><small>мясная лавка · Шушары</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#assort">Ассортимент</a>
+      <a href="#order">Заказ</a>
+      <a href="#photos">Фото</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#shops">Адреса</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="tel:+79992320558">+7 999 232-05-58</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker" style="color:var(--gold-2)">Мясная лавка · Халяль</div>
+      <h1>Свежее мясо <em>от&nbsp;фермера</em></h1>
+      <p class="slogan">«Чистый вкус натуральных продуктов»</p>
+      <p class="lead">Говядина, баранина, фермерская курица, колбасы халяль, полуфабрикаты и молочные продукты. Две лавки в Шушарах. На Муромской, 2А открыто каждый день с 9:00 до 21:00.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+79992320558">Позвонить</a>
+        <a class="btn btn-ghost" href="https://t.me/SchastliviyFermer05" target="_blank" rel="noopener">Telegram-канал</a>
+      </div>
+      <div class="stats">
+        <div><b>5,0 ★</b><span>Яндекс Карты, 68 оценок</span></div>
+        <div><b>5,0 ★</b><span>в 2ГИС</span></div>
+        <div><b>2</b><span>лавки в Шушарах</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="ph"><img src="img/y03.jpg" alt="Каре ягнёнка на витрине лавки"></div>
+      <div class="seal"><img src="img/logo.jpg" alt=""></div>
+      <div class="halal">Халяль<small>мясо и колбасы</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="assort">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="kicker">Что у нас есть</div><h2>Ассортимент лавки</h2></div>
+      <p>«Свежее качественное мясо, халяль и тот самый подход, который когда-то передавался от дедушки к внуку.»</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="im"><img src="img/y16.jpg" alt="Витрина с говядиной и бараниной" loading="lazy"></div>
+        <div class="tx"><h3>Говядина и баранина</h3><p>Парная говядина, вырезка, рёбра, каре и мякоть баранины. Подскажем, какой кусок взять для стейка или запекания.</p></div>
+      </article>
+      <article class="card">
+        <div class="im"><img src="img/y14.jpg" alt="Каре ягнёнка" loading="lazy"></div>
+        <div class="tx"><h3>Для шашлыка</h3><p>Мякоть, пистолетики, каре. Подберём нужную часть и замаринуем по вашему заказу.</p></div>
+      </article>
+      <article class="card">
+        <div class="im"><img src="img/y09.jpg" alt="Витрина с колбасами халяль" loading="lazy"></div>
+        <div class="tx"><h3>Колбасы халяль</h3><p>Большая витрина колбас и мясных деликатесов. Для завтрака, ужина или перекуса.</p></div>
+      </article>
+      <article class="card">
+        <div class="im"><img src="img/y07.jpg" alt="Фарш" loading="lazy"></div>
+        <div class="tx"><h3>Фарш и субпродукты</h3><p>Свежий фарш для котлет и субпродукты.</p></div>
+      </article>
+      <article class="card">
+        <div class="im"><img src="img/y13.jpg" alt="Молочная витрина" loading="lazy"></div>
+        <div class="tx"><h3>Молочное и сыры</h3><p>Катык, айран, сулугуни, адыгейский сыр и другая молочная продукция.</p></div>
+      </article>
+      <article class="card plain">
+        <div class="tx">
+          <h3>И ещё на полках</h3>
+          <p>Фермерская курица, домашние полуфабрикаты, урбеч из Дагестана, приправы и лимонады.</p>
+          <div class="tags"><span>Филе</span><span>Крылышки</span><span>Голень</span><span>Курзе</span><span>Пельмени</span><span>Урбеч</span><span>Специи</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="order" style="padding-block:56px">
+  <div class="wrap">
+    <div class="svc"><div class="n">1</div><div><h3>Поможем выбрать</h3><p>Продавцы подскажут кусок под ваше блюдо и расскажут, как его приготовить.</p></div></div>
+    <div class="svc"><div class="n">2</div><div><h3>Замаринуем</h3><p>Выберите мясо, а маринад для шашлыка или стейков мы сделаем сами. Остаётся только пожарить.</p></div></div>
+    <div class="svc"><div class="n">3</div><div><h3>Доставка</h3><p>Мясо можно заказать с доставкой на дом. Позвоните, и мы поможем оформить заказ.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap recipe">
+    <div class="ph"><img src="img/y05.jpg" alt="Говядина на витрине" loading="lazy"></div>
+    <div>
+      <div class="kicker">Из нашего канала</div>
+      <h2>Самый простой маринад для шашлыка</h2>
+      <p style="color:var(--muted);margin:16px 0 0">Всё самое лучшее в простом. Возьмите у нас мясо и замаринуйте дома, или попросите нас, и мы всё подготовим.</p>
+      <div class="note">
+        <h3>Что понадобится</h3>
+        <ul><li>Минеральная вода</li><li>Перец</li><li>Приправа с паприкой</li><li>Лук</li><li>Соль</li></ul>
+        <div class="src">Рецепт из Telegram-канала «Счастливого фермера»</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="photos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Как у нас</div><h2>Витрины и лавка</h2></div><p>Чисто, светло и без неприятных запахов: так о лавке пишут покупатели.</p></div>
+    <div class="gal">
+      <figure class="w t"><img src="img/y08.jpg" alt="Фасад мясной лавки" loading="lazy"><figcaption>Муромская ул., 2А</figcaption></figure>
+      <figure><img src="img/y04.jpg" alt="Рёбра и мякоть" loading="lazy"></figure>
+      <figure><img src="img/02.jpg" alt="Говяжьи рёбра" loading="lazy"></figure>
+      <figure class="w"><img src="img/y12.jpg" alt="Мясная витрина" loading="lazy"></figure>
+      <figure class="t"><img src="img/y20.jpg" alt="Зал лавки" loading="lazy"></figure>
+      <figure><img src="img/y06.jpg" alt="Говядина" loading="lazy"></figure>
+      <figure class="w"><img src="img/y10.jpg" alt="Вывеска «Парное мясо и молочные продукты»" loading="lazy"><figcaption>Парное мясо и молочные продукты</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="reviews">
+  <div class="wrap" style="display:block">
+    <div class="sec-head">
+      <div><div class="kicker">Что говорят покупатели</div><h2>Отзывы</h2></div>
+      <div class="rv-top">
+        <div class="score"><b>5,0</b><span>Яндекс Карты · 59 отзывов</span></div>
+        <div class="score"><b>5,0</b><span>2ГИС</span></div>
+      </div>
+    </div>
+    <div class="reviews">
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Всё, что там покупала, отличного качества, мясо всегда свежее. Самый вкусный сыр, который пробовала, именно в этом магазине. Пельмешки, курица, говядина, баранина, колбасы, всё на высшем уровне. Большой выбор приправ. В магазине чисто и стильно, очень удобная парковка рядом.</p><footer><b>Ольга</b><span>7 мая 2026 · Яндекс</span></footer></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Очень удивили и порадовали сервисом! Заказала мясо, и его привёз сам владелец магазина. Мясо было упаковано очень аккуратно и, что главное, оказалось очень вкусным.</p><footer><b>Z.YA</b><span>18 марта 2026 · Яндекс</span></footer></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Видно, что всё сделано с душой: халяльное мясо, свежая молочная продукция, специи. Взяла молочную продукцию: вкус действительно домашний, натуральный.</p><footer><b>Анастасия Антоновская</b><span>29 января 2026 · Яндекс</span></footer></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Мясо лучшего качества. Всегда свежее. Ассортимент мяса на любой вкус, шашлыки, пистолетики, фарш, всё на высшем уровне. Теперь покупаем только тут.</p><footer><b>Магомед-Саид</b><span>27 февраля 2026 · Яндекс</span></footer></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Продавец очень вежливый, проконсультировал и помог в выборе. В магазине на удивление чисто и нет неприятных запахов, такое редко встретишь в мясном отделе.</p><footer><b>Дарья Биарсланова</b><span>25 января 2026 · Яндекс</span></footer></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>Мясо вкусное, на вид очень красивые кусочки (такое же вкусное, как в Дагестане), приятные цены, вежливый персонал, быстрая доставка.</p><footer><b>Ханум Кадырова</b><span>3 марта 2026 · Яндекс</span></footer></blockquote>
+    </div>
+    <div class="more">
+      <a class="btn btn-line" href="https://yandex.ru/maps/org/schastlivy_fermer/188885582235/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a>
+      <a class="btn btn-line" href="https://2gis.ru/spb/firm/70000001110429611/tab/reviews" target="_blank" rel="noopener">Отзывы в 2ГИС</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="shops">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="kicker">Где купить</div><h2>Две лавки в Шушарах</h2></div><p>Муромская, 2А: ежедневно с 9:00 до 21:00, рядом парковка.</p></div>
+    <div class="shops">
+      <div class="shop">
+        <div class="no">01</div>
+        <h3>Детскосельский</h3>
+        <p>пос. Шушары, тер. Детскосельский, Муромская ул., 2А</p>
+        <p>Ежедневно 9:00–21:00</p>
+        <div class="links">
+          <a class="btn btn-gold btn-sm" href="https://yandex.ru/maps/org/schastlivy_fermer/188885582235/" target="_blank" rel="noopener">Яндекс Карты</a>
+          <a class="btn btn-ghost btn-sm" href="https://2gis.ru/spb/firm/70000001110429611" target="_blank" rel="noopener">2ГИС</a>
+        </div>
+      </div>
+      <div class="shop">
+        <div class="no">02</div>
+        <h3>Пулковское</h3>
+        <p>пос. Шушары, тер. Пулковское, Образцовая ул., 2</p>
+        <p>Новая лавка. Часы работы уточняйте по телефону</p>
+        <div class="links">
+          <a class="btn btn-gold btn-sm" href="https://yandex.ru/maps/?text=%D0%A8%D1%83%D1%88%D0%B0%D1%80%D1%8B%2C%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%202" target="_blank" rel="noopener">Яндекс Карты</a>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div><h4>Телефоны</h4><div class="ph-list"><a href="tel:+79992320558">+7 999 232-05-58</a><a href="tel:+79602567665">+7 960 256-76-65</a><a href="tel:+79215510908">+7 921 551-09-08</a></div></div>
+      <div><h4>Соцсети</h4><p><a href="https://t.me/SchastliviyFermer05" target="_blank" rel="noopener">Telegram: t.me/SchastliviyFermer05</a></p><p style="margin-top:6px"><a href="https://vk.ru/schastliviyfermer05" target="_blank" rel="noopener">ВКонтакте: vk.ru/schastliviyfermer05</a></p></div>
+      <div><h4>Оплата</h4><p>Картой, переводом или наличными</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/logo.jpg" alt=""><span><b>Счастливый фермер</b><small>мясная лавка · Шушары</small></span></a>
+    <p>Пример сайта для мясной лавки «Счастливый фермер». Сведения, фото и отзывы взяты из открытых карточек на Яндекс Картах и в 2ГИС и из Telegram-канала лавки (16.11.2026).</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-gold btn-sm" href="tel:+79992320558">Позвонить</a>
+  <a class="btn btn-ghost btn-sm" href="https://t.me/SchastliviyFermer05" target="_blank" rel="noopener">Telegram</a>
+</div>
+</body>
+</html>
